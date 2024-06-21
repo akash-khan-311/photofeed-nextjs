@@ -14,7 +14,9 @@
     @apply font-poppins;
   }
 }
-
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
 @layer components {
   .img-grid {
     @apply columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4 [&>a:not(:first-child)]:mt-4 [&>a]:block [&>a]:rounded-lg [&>a]:overflow-hidden [&>a]:relative [&>a]:cursor-pointer;
